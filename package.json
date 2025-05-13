@@ -1,0 +1,28 @@
+{
+  "name": "tistory-readme-stats",
+  "version": "1.0.0",
+  "main": "api/stats.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "vercel dev"
+  },
+  "dependencies": {
+    "@vercel/node": "^1.12.0",
+    "axios": "^0.21.1",
+    "ejs": "^3.1.6",
+    "querystring": "^0.2.0"
+  },
+  "devDependencies": {
+    "@types/ejs": "^3.1.5",
+    "@types/node": "^14.14.37",
+    "typescript": "^4.2.3"
+  },
+  "builds": [
+    {
+      "src": "api/stats.ts",
+      "use": "@vercel/node"
+    }
+  ],
+  "outputDirectory": "dist"
+}
